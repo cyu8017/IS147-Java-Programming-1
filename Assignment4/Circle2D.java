@@ -13,7 +13,6 @@
  */
 
 public class Circle2D {
-
     double currentX;
     double currentY;
     String color;
