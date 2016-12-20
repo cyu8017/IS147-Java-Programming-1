@@ -19,7 +19,7 @@ import java.util.Scanner;
 public class CheckAnagram {
     
     /** Return true if the s1 and s2 are anagrams */
-    public static boolean isAnagram(char[] s1, char[] s2){
+    public static boolean isAnagram(char[] s1, char[] s2) {
 	if (s1.length == s2.length){
 	    s1 = sort(s1);
 	    s2 = sort(s2);
@@ -42,7 +42,7 @@ public class CheckAnagram {
     /** Return a sorted array of s */
     /** (i.e.) For the array, s = [c, d, a, f, g], **/
     /** this method should return [a, c, d, f, g] **/
-    public static char[] sort(char[] s){
+    public static char[] sort(char[] s) {
 	
 	String str = new String(s);
 	String lower = str.toLowerCase();
@@ -52,7 +52,8 @@ public class CheckAnagram {
 	for (int i = 0; i < s.length; i++) { 
 	    char currentMin = t[i]; 
 	    int currentMinIndex = i; 
-	    for (int j = i+1; j < t.length; j++ ){ 
+		
+	    for (int j = i+1; j < t.length; j++ ) { 
 		if (currentMin < t[j]) { 
 		    currentMin = t[j];  
 		    currentMinIndex = j; 
@@ -68,6 +69,7 @@ public class CheckAnagram {
     }
     
     public static void main(String[] args) {
+	    
 	Scanner input = new Scanner(System.in); 
 	
 	// Prompt user to enter the first string
