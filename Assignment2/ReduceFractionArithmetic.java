@@ -35,7 +35,7 @@ public class ReduceFractionArithmetic {
      * @param numerator2 the numerator of the 2nd fraction
      * @param denominator2 the denominator of the 2nd fraction
      */	
-    public static void addition(int numerator1, int denominator1, int numerator2, int denominator2){
+    public static void addition(int numerator1, int denominator1, int numerator2, int denominator2) {
 
 	int gcd = findGCD(denominator1, denominator2);
 	double num1 = (double)gcd/denominator1 * numerator1;
@@ -55,7 +55,7 @@ public class ReduceFractionArithmetic {
      * @param numerator2 the numerator of the 2nd fraction
      * @param denominator2 the denominator of the 2nd fraction
      */
-    public static void subtraction(int numerator1, int denominator1, int numerator2, int denominator2){
+    public static void subtraction(int numerator1, int denominator1, int numerator2, int denominator2) {
 	
 	double number1 = (double)denominator2 * numerator1;
 		double number2 = (double)denominator1 * numerator2;
@@ -74,8 +74,8 @@ public class ReduceFractionArithmetic {
      * @param numerator2 the numerator of the 2nd fraction
      * @param denominator2 the denominator of the 2nd fraction
      */
-    public static void multiplication(int numerator1, int denominator1, int numerator2, int denominator2){
-	
+    public static void multiplication(int numerator1, int denominator1, int numerator2, int denominator2) {
+	    
 	int number1 = numerator1 * numerator2;
 	int number2 = denominator1 * denominator2;
 	reduce(number1, number2);
@@ -116,7 +116,7 @@ public class ReduceFractionArithmetic {
 			       + (numerator/denominator)); 
 	} 
 	
-	else if (Math.abs(numerator) < Math.abs(denominator)){
+	else if (Math.abs(numerator) < Math.abs(denominator)) {
 	    
 	    // Display Proper Fraction
 	    int highestFactor = 1;
