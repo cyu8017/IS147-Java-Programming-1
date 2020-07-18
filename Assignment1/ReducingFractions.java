@@ -15,53 +15,51 @@
  */
 
 import java.util.Scanner;
- 
-public class ReducingFractions {
-	
-    public static void main(String[] args) {
-	
-	// Declare global variables
-	int numerator, denominator; 
-	
-	Scanner input = new Scanner(System.in); 
-	
-	// Numerator Input
-	System.out.print("Enter a numerator: "); 
-	numerator = input.nextInt(); 
-	
-	// Denominator Input
-	System.out.print("Enter a denominator: "); 
-	denominator = input.nextInt(); 
-	
-	// Calculate Proper Fractions
-	if (Math.abs(numerator) < denominator){	
-	    // Display Proper Fraction
-	    System.out.print(numerator + "/" + denominator + " is a proper fraction. "); 
-	} 
-	
-	else { 
-	    
-	    // Calculate Improper Fraction
-	    if (numerator % denominator == 0) {
-		
-		// Displays the improper fraction as a reduced number
-		System.out.print(numerator + "/" + denominator + 
-				 " is a improper fraction and can be reduced to " 
-				 + (numerator/denominator) + " "); 
-	    } 
 
-	    else {
-		
-		// Mixed Fraction
-		int wholeNumber = (numerator / denominator);
-		
-		int remainderNumber = numerator % (denominator);
-		
-		System.out.print(numerator + "/" + denominator + 
-				 " is a improper fraction and its mixed fraction is " 
-				 + wholeNumber + " + "  + remainderNumber + "/" + denominator + " ");
-	    }						
-	}				
-    }	
-    
-}	
+public class ReducingFractions {
+
+	public static void main(String[] args) {
+
+		// Declare global variables
+		int numerator, denominator;
+
+		Scanner input = new Scanner(System.in);
+
+		// Numerator Input
+		System.out.print("Enter a numerator: ");
+		numerator = input.nextInt();
+
+		// Denominator Input
+		System.out.print("Enter a denominator: ");
+		denominator = input.nextInt();
+
+		// Calculate Proper Fractions
+		if (Math.abs(numerator) < denominator) {
+			// Display Proper Fraction
+			System.out.print(numerator + "/" + denominator + " is a proper fraction. ");
+		}
+
+		else {
+
+			// Calculate Improper Fraction
+			if (numerator % denominator == 0) {
+
+				// Displays the improper fraction as a reduced number
+				System.out.print(numerator + "/" + denominator + " is a improper fraction and can be reduced to "
+						+ (numerator / denominator) + " ");ß
+			}
+
+			else {
+
+				// Mixed Fraction
+				int wholeNumber = (numerator / denominator);
+
+				int remainderNumber = numerator % (denominator);
+
+				System.out.print(numerator + "/" + denominator + " is a improper fraction and its mixed fraction is "
+						+ wholeNumber + " + " + remainderNumber + "/" + denominator + " ");
+			}
+		}
+	}
+
+}
